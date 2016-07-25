@@ -13,6 +13,7 @@ $ ->
     method = if options.toggle is 'hide' then 'addClass' else 'toggleClass'
     $('.cover')[method] 'expanded'
     $('.link-item')[method] 'expanded'
+    $('#particles-js')[method] 'expanded'
     Uno.search.form options.form if options.form?
 
   $('#blog-button').click ->
